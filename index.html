@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="Daniela Domínguez">
+  <meta name="description" content="Portafolio de Daniela Domínguez">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Diseño, Web">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo -->
+  <title>Daniela Domínguez | Desarrollo Web Front-End</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/imagenes/programacion.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="/imagenes/programacion.png" width="70" alt="Logo de la página web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a style="color: rgb(228, 68, 121); font-family: 'Bebas Neue', sans-serif; " class="nav-link active"
+              aria-current="page" href="#sobre-mi">Sobre
+              mí</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(228, 68, 121); font-family: 'Bebas Neue', sans-serif;" class="nav-link"
+              href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(228, 68, 121); font-family: 'Bebas Neue', sans-serif;" class="nav-link"
+              href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(228, 68, 121); font-family: 'Bebas Neue', sans-serif;" class="nav-link"
+              href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/IMG-20201129-WA0009.jpg"
+        alt="Foto de Daniela Domínguez">
+      <h1 style="color: rgb(228, 68, 121); font-family: 'Caprasimo', cursive;">Hola,
+        <br>soy Daniela Domínguez
+      </h1>
+      <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
+
+      <!--Animación con JavaScript-->
+      <h2 style="color: rgb(134, 62, 165); " class="text mb-4" id="typewriter"></h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg"
+        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+    </div>
+    <br>
+  </section>
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo" style="font-family: 'Cormorant Garamond', serif; font-size: 40px;">Conoce a Daniela
+        Domínguez</h2>
+      <p class="seccion-texto" style="font-family: 'Marcellus', serif; font-size: 20px;">Tengo 21 años y soy una
+        estudiante de quinto semestre en la licenciatura de Bioingeniería
+        Médica en la Facultad de Medicina,
+        UAMEX. Gracias a la cual he podido encontrar mi gustó hacía la programación, iniciando
+        con los lenguajes C y C++, y con el bootcamp de Tecnolochicas PRO cuento con conocimientos de HTML y CSS. </p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Desarrollo Web -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop" style="color: black" ;"></i>
+          <p class="experiencia-titulo" style="color: rgb(134, 62, 165) ; ">Desarrollo Web</p>
+          <p style="font-family: 'Roboto Flex', sans-serif;">Bootcamp Tecnolochicas PRO. <br> Programa educativo extracurricular intensivo, donde aprendí: html, css,
+            github, javascript y conocimientos de empleabilidad para iniciar en el mundo profesional tecnológico. </p>
+          <div class="badges-contenedor">
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">HTML</span>
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">CSS</span>
+            <span style="background-color: rgb(224, 56, 126);"class="badge text">JavaScript</span>
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">Tecnolochicas PRO</span>
+          </div>
+        </div>
+        <!-- Articulos -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop" style="color:black;"></i>
+          <p class="experiencia-titulo" style="color:rgb(134, 62, 165) ;">Hobbies</p>
+          <p style="font-family: 'Roboto Flex', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem
+            purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+          <div class="badges-contenedor">
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">Escribir</span>
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">Editar</span>
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">Blogs</span>
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop" style="color: black ;"></i>
+          <p class="experiencia-titulo" style="color: rgb(134, 62, 165) ;">Estudiante</p>
+          <p style="font-family: 'Roboto Flex', sans-serif;">Bioingeniería Médica, Facultad de Medicina UAEMEX. <br>Colaborar con equipos multidisciplinarios abocados
+            al
+            cuidado de la salud y a la mejora de la calidad de vida, integrando conocimientos de las ciencias exactas,
+            de la ingeniería y de la medicina, para solucionar problemas clínicos
+            con soporte tecnológico.</p>
+          <div class="badges-contenedor">
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">Programación</span>
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">Desarrollo Web</span>
+            <span style="background-color: rgb(224, 56, 126);" class="badge text">C++</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 style="color: rgb(224, 56, 126); font-family: 'Caprasimo', cursive;" class="seccion-titulo texto-negro">Mis
+      proyectos recientes</h2>
+    <h3 style="font-family: 'Roboto Flex', sans-serif; color: black;" class="seccion-descripcion">Estos son algunos de los proyectos que he creado recientemente...</h3>
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/google.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p style="color: rgb(224, 56, 126);">Clon de Google</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/danizetina/ClonGoogle/" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-github"></i>
+                </a>
+                <a href="https://clon-google-dany.netlify.app" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="/imagenes/Captura de pantalla (52).png" alt="Proyecto 1">
+            <div class="overlay">
+              <p style="color:rgb(224, 56, 126);">Página Web</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/danizetina/PaginaWebMariposas.git" target="_blank"
+                  rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-github"></i>
+                </a>
+                <a href="https://mariposas-dany.netlify.app" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p style="color: rgb(224, 56, 126);">Portafolio</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-github"></i>
+                </a>
+                <a href="#/" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p style="color: rgb(224, 56, 126);">Proyecto 4</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto5.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p style="color: rgb(224, 56, 126);">Proyecto 5</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/proyecto6.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p style="color: #e0387e;">Proyecto 6</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i style="color: rgb(224, 56, 126);" class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/danizetina" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info"
+        style="background-color: rgb(215, 189, 226); border: solid rgb(215, 189, 226);font-family: 'Roboto Flex', sans-serif; ">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios seccion-clara">
+    <h2 style="color: rgb(224, 56, 126); font-family: 'Caprasimo', cursive;" class="seccion-titulo">Testimonios</h2>
+    <h3 style="font-family: 'Roboto Flex', sans-serif; color: black;" class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/Miranda.JPG" alt="Foto de Miranda">
+            <p style="font-family: 'Marcellus', serif; color: black;" class="testimonio-texto">“Daniela ha demostrado ser una
+              excelente estudiante!. Durante el desarrollo de
+              proyectos, ha mostrado un sólido dominio de tecnologías front-end como HTML, CSS y JavaScript, logrando
+              crear interfaces de usuario atractivas y funcionales.”</p>
+            <div class="testimonio-info">
+              <p class="cliente">Miranda
+
+              </p>
+              <p style="color: black;" class="cargo">Ingeniera en Software</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.svg" alt="Foto de Nora">
+            <p style="font-family: 'Marcellus', serif; color: black;" class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed vel iaculis urna.
+              Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Nora</p>
+              <p style="color: black;" class="cargo">Gerente de DiseñaMiPáginaWeb</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.svg" alt="Foto de Leonardo">
+            <p style="font-family: 'Marcellus', serif; color: black;" class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed vel iaculis urna.
+              Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Leonardo</p>
+              <p style="color: black;" class="cargo">Director de AprendeAProgramar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-oscura" style="background-color: rgb(215, 189, 226);">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo" style="font-family: 'Caprasimo', cursive;">
+            ¡Hablemos!
+          </div>
+          <div style="font-family: 'Marcellus', serif;" class="col-12 col-md-4 descripcion">
+            Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:danidz210702@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de pagina (footer) -->
+  <footer style="background-color: #d7bde2;"
+    class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="imagenes/programacion.png" alt="Logo del portafolio">
+    <p class="footer-texto text-center" style="font-size: 20px;"> "La perfección se logra, no cuando no hay nada más que agregar, br sino cuando no queda nada que quitar".
+      <br>- Antoine de Saint-Exupéry<br> <br>Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://www.facebook.com/profile.php?id=100079292289797" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://github.com/danizetina" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/daniela-dom%C3%ADnguez-5123b3285/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.tiktok.com/@ddz.21" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-tiktok"></i>
+      </a>
+      <a href="mailto:danidz210702@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div style="color: black; " class="derechos-de-autor">Creado por Daniela Domínguez (2023) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
